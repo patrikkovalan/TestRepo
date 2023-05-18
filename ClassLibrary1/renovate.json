@@ -1,4 +1,5 @@
 {
+  "prConcurrentLimit": -1,
   "packageRules": [
     {
       "groupName": "all non-major dependencies",
