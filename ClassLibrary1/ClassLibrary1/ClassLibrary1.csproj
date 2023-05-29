@@ -5,46 +5,36 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+   <Project Sdk="Microsoft.NET.Sdk">
+   
     <ItemGroup>
-        <PackageReference Include="System.Net.Security" Version="4.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
-        <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
-        <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
-        <PackageReference Include="Serilog.Extensions.Hosting" Version="4.2.0" />
-        <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
-        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
-        <PackageReference Include="SolarWinds.UamsClient.Plugins" Version="2.0.0" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
-        <PackageReference Include="coverlet.collector" Version="3.2.0" />
-        <PackageReference Include="Moq" Version="4.17.2" />
-        <PackageReference Include="xunit" Version="2.4.2" />
-        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
-        <PackageReference Include="MartinCostello.Logging.XUnit" Version="0.2.0" />
-        <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
-        <PackageReference Include="Google.Protobuf" Version="3.21.7" />
-        <PackageReference Include="Grpc.Tools" Version="2.46.3" />
-        <PackageReference Include="Grpc" Version="2.46.3" />
-        <PackageReference Include="Grpc.AspNetCore" Version="2.46.0" />
-        <PackageReference Include="Grpc.Net.Client" Version="2.46.0" />
-        <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
-        <PackageReference Include="SolarWinds.Uams.Api.Public" Version="1.6.1" />
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-        <PackageReference Include="Microsoft.CodeAnalysis" Version="4.0.1" />
-        <PackageReference Include="FluentAssertions" Version="5.7.0" />
-        <PackageReference Include="SolarWinds.InformationService.Contract" Version="2022.3.0.212" />
-        <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.1" />
-        <PackageReference Include="System.Reactive" Version="5.0.0" />
-        <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
-        <PackageReference Include="System.Net.Http" Version="4.3.4" />
-        <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="6.0.0" />
-        <PackageReference Include="System.Security.Cryptography.Xml" Version="6.0.1" />
-        <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
-
+        <PackageReference Include="Microsoft.Extensions.Hosting" />
+        <PackageReference Include="Serilog.Settings.Configuration" />
+        <PackageReference Include="Serilog.Enrichers.Thread" />
+        <PackageReference Include="Serilog.Extensions.Hosting" />
+        <PackageReference Include="Serilog.Sinks.Console" />
+        <PackageReference Include="Serilog.Sinks.File" />
+        <PackageReference Include="Google.Protobuf" />
+        <PackageReference Include="Grpc.Tools" />
+        <PackageReference Include="SolarWinds.InformationService.Contract" />
+        <PackageReference Include="System.Reactive" /> 
+        <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" />
+        <PackageReference Include="SolarWinds.Uams.Api.Public" />
+        <PackageReference Include="coverlet.collector"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="SolarWinds.UamsClient.Plugins" />
+        <!-- added explicitly to beat lower version (2.30) from SolarWinds.UamsClient.Plugins SDK -->
+        <!-- version 2.30 causes trouble with UamsResponder -->
+        <PackageReference Include="Grpc.Net.Client" />  
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="SolarWinds.AIIM.AnomalyDetection.Client.Tests" />
+        <InternalsVisibleTo Include="SolarWinds.AIIM.AnomalyDetection.Client.IntegrationTests" />
+        <InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+    </ItemGroup>
+
 
 </Project>
