@@ -3,7 +3,7 @@
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
         <PackageVersion Include="Serilog.Enrichers.Thread" Version="3.1.0" />
         <PackageVersion Include="Serilog.Settings.Configuration" Version="3.3.0" />
-        <PackageVersion Include="Serilog.Extensions.Hosting" Version="4.2.0" />
+        <PackageVersion Include="Serilog.Extensions.Hosting" Version="4.2.1-dev-00092" />
         <PackageVersion Include="Serilog.Sinks.Console" Version="4.0.1" />
         <PackageVersion Include="Serilog.Sinks.File" Version="5.0.0" />
         <PackageVersion Include="SolarWinds.UamsClient.Plugins" Version="2.0.0" />
