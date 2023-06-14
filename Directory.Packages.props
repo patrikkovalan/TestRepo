@@ -14,7 +14,7 @@
         <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.5" />
         <PackageVersion Include="MartinCostello.Logging.XUnit" Version="0.2.0" />
         <PackageVersion Include="Microsoft.Extensions.Logging" Version="6.0.0" />
-        <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+        <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.4" />
         <PackageVersion Include="Google.Protobuf" Version="3.21.7"/>
         <PackageVersion Include="Grpc.Tools" Version="2.46.3"/>
         <PackageVersion Include="Grpc" Version="2.46.3" />
@@ -27,7 +27,7 @@
         <PackageVersion Include="FluentAssertions" Version="5.7.0" />
         <PackageVersion Include="SolarWinds.InformationService.Contract" Version="2022.3.0.212" />
         <PackageVersion Include="Microsoft.Extensions.Options" Version="6.0.0" />
-        <PackageVersion Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
+        <PackageVersion Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
         <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
         <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
         <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="6.0.1" />
