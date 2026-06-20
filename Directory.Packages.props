@@ -12,7 +12,7 @@
         <PackageVersion Include="Moq" Version="4.17.2" />
         <PackageVersion Include="xunit" Version="2.4.2" />
         <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.5" />
-        <PackageVersion Include="MartinCostello.Logging.XUnit" Version="0.2.0" />
+        <PackageVersion Include="MartinCostello.Logging.XUnit" Version="0.7.1" />
         <PackageVersion Include="Microsoft.Extensions.Logging" Version="6.0.0" />
         <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
         <PackageVersion Include="Google.Protobuf" Version="3.21.7"/>
